@@ -4,10 +4,10 @@ Vue.component('about-page',{
 		<router-link to="/" class="back-button">&lt;</router-link>
 		<div class="poke-profile">
 			<h1 style="text-align: center;"><strong>#{{$route.params.number}}-{{pkm.name}}</strong></h1>
-			<img class="poke-sprite" :src="'//serebii.net/sunmoon/pokemon/'+$route.params.number+'.png'" />
+			<img class="poke-sprite" :src="'http://serebii.net/sunmoon/pokemon/'+$route.params.number+'.png'" />
 			<ul class="poke-types">
 				<li v-for="tipo in pkm.types">
-					<img :src="'http//serebii.net/pokedex-bw/type/'+tipo.name+'.gif'">
+					<img :src="'http://serebii.net/pokedex-bw/type/'+tipo.name+'.gif'">
 				</li>
 			</ul>
 			<table>
